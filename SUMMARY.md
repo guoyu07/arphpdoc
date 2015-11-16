@@ -5,7 +5,7 @@
 * 序言
    * [简介](Intro.md)
    * [初始化页面](Init.md)
-   * 文件命名及编码规范
+   * [文件命名及编码规范](CodeStyle.md)
 * [模式选择](Mode.md)
 * [开发流程](Develop.md)
 * [组件](Comp.md)
