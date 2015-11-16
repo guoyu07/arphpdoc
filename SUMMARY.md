@@ -7,6 +7,7 @@
    * [初始化页面](Init.md)
    * [文件命名及编码规范](CodeStyle.md)
 * [模式选择](Mode.md)
+   * WEB
 * [开发流程](Develop.md)
 * [组件](Comp.md)
 * [扩展](Ext.md)
