@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [版权信息](Copyright.md)
 * 序言
-   * 简介
+   * [简介](Intro.md)
 * [模式选择](Mode.md)
 * [开发流程](Develop.md)
 * [组件](Comp.md)
