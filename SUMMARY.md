@@ -8,5 +8,5 @@
 * [组件](Comp.md)
 * [扩展](Ext.md)
 * [附录](Appendix.md)
-* 常见问题
+* [常见问题](Helps.md)
 
