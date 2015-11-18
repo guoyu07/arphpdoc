@@ -97,10 +97,15 @@ return array(
 
 
 ### 常规(用户)配置
-
-arCfg('ar') // arphp
+```
+arCfg('ar'); // arphp
+// 改变配置
 Ar::setConfig('ar', 'hello');
-arCfg('ar');
+arCfg('ar'); // hello```
+```
+arCfg('aa'); // null
+arCfg('aa', 123); // 123```
+
 
 ### 组件配置
 
