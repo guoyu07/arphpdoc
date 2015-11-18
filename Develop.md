@@ -22,14 +22,16 @@ git : https://github.com/assnr/ArPHP.git
 只要在入口文件里包含ArPHP初始化文件 
 
 
+index.php  入口代码
 
-index.php
-
-代码
+整体框框
 
 ```include_once 'ArPHP/init.php';```
 
 
+单文件框架
+
+```include_once 'arphp.php';```
 
 访问index.php即可件 hello ArPHP!
 
