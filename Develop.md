@@ -19,10 +19,14 @@ git : https://github.com/assnr/ArPHP.git
 
 ## 配置
 
+配置有全局配置和应用配置之分，项目配置存在于每个项目对应的目录Conf/app.config.php
+
+全局配置在项目目录Conf/public.config.php
+
+
+
 
 ### 常规配置
-
-
 
 
 ### 组件配置
