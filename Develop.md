@@ -98,7 +98,9 @@ return array(
 
 ### 常规(用户)配置
 
-
+arCfg('ar') // arphp
+Ar::setConfig('ar', 'hello');
+arCfg('ar');
 
 ### 组件配置
 
