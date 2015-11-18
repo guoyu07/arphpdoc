@@ -42,6 +42,8 @@ index.php  入口代码
 全局配置在项目目录Conf/public.config.php
 
 
+配置可用ini格式配置，public.config.ini,app.config.ini，同时存在不冲突
+
 
 
 ### 常规配置
