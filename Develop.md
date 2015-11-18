@@ -106,8 +106,12 @@ arCfg('ar'); // hello```
 arCfg('aa'); // null
 // 默认值
 arCfg('aa', 123); // 123```
-
-
+// 组件配置
+    'components' => array(
+        ...
+        ...
+    );
+    具体配置见组件
 ### 组件配置
 
 
