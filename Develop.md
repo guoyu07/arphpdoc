@@ -44,6 +44,57 @@ index.php  入口代码
 注：应用配置覆盖全局配置，配置可用ini格式配置，public.config.ini,app.config.ini，同时存在不冲突
 
 
+配置文件格式例：
+```
+return array(
+    // 常规配置
+    'ar' => 'arphp',```
+
+    // 应用配置(系统)
+    'moduleLists' => array(
+        'main'
+    ),
+
+    // 是否开启trace信息
+    'DEBUG_SHOW_TRACE' => false,
+
+
+    // 组件配置
+    'components' => array(
+        // 远程调用
+        'rpc' => array(
+            // 惰性加载
+            'lazy' => true,
+            // 对应Compnent目录类
+            'service' => array(
+                // 组件配置
+                'config' => array(
+                    'wsFile' => 'http://192.168.1.67/arphp/arws.php',
+                ),
+            ),
+            // 对应Compnent目录类
+            'source' => array(
+                // 组件配置
+                'config' => array(
+                    'remotePrefix' => 'http://api.test.cn/Handler/',
+                    'method' => 'post',
+                    // 自定义配置
+                    'authOptions' => array(
+                        'key' => '5c54df2b9t6621510fb3y1d44jyt2014',
+                        'opt' => 'wxspcl',
+                        'curlOptions' => array(
+                            CURLOPT_REFERER => 'http://api.test.cn/test.do',
+                            ),
+                        ),
+                    ),
+
+                ),
+            ),
+        ), 
+    ),
+
+);
+
 
 ### 常规(用户)配置
 
