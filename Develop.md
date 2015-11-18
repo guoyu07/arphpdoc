@@ -37,16 +37,18 @@ index.php  入口代码
 
 ## 配置
 
-配置有全局配置和应用配置之分，项目配置存在于每个项目对应的目录Conf/app.config.php
+配置有全局配置和应用配置之分，项目配置存在于每个应用对应的目录Conf/app.config.php
 
-全局配置在项目目录Conf/public.config.php
+全局配置在项目目录Conf/public.config.php 
 
-
-配置可用ini格式配置，public.config.ini,app.config.ini，同时存在不冲突
+注：应用配置覆盖全局配置，配置可用ini格式配置，public.config.ini,app.config.ini，同时存在不冲突
 
 
 
 ### 常规配置
+
+
+
 
 
 ### 组件配置
