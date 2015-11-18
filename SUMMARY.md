@@ -6,6 +6,7 @@
    * [简介](Intro.md)
    * [初始化页面](Init.md)
    * [文件命名及编码规范](CodeStyle.md)
+   * 性能测试
 * [开发流程](Develop.md)
 * [模式选择](Mode.md)
    * WEB
