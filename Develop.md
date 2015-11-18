@@ -104,6 +104,7 @@ Ar::setConfig('ar', 'hello');
 arCfg('ar'); // hello```
 ```
 arCfg('aa'); // null
+// 默认值
 arCfg('aa', 123); // 123```
 
 
