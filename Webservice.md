@@ -3,7 +3,7 @@
 webservice 可以实现主从数据，主从业务机分离模型。有效减小代码耦合程度。
 ArPHP在webservice 对这块做了独到的解释,不同于基于PHP soap扩展的 webservice,
 
-ArPHP提供客户端数据包装功能，解析服务端返回的数据，相对于传统webservice调试困难的问题, ArPHP服务端代码调试也是相当容易，echo输出的信息可以直接显示在debug制面板。ArPHP容错程度高，内存占用低，绝对的轻量级，上手容易，。可以无缝与ARPHP其他的几种模式融合。RPC调用就是爽。
+ArPHP提供客户端数据包装功能，解析服务端返回的数据，相对于传统webservice调试困难的问题, ArPHP服务端代码调试也是相当容易，echo输出的信息可以直接显示在debug制面板。ArPHP容错程度高，内存占用低，绝对的轻量级，上手容易。可以无缝与ARPHP其他的几种模式融合。RPC调用很华丽。
 
 ArPHP提供的服务端入口文件arws.php 定义 
 
