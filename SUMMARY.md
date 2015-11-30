@@ -13,7 +13,7 @@
    * [扩展函数库](Extend.md)
    * [外部框架](FrameMode.md)
    * [WebService](Webservice.md)
-   * 命令行
+   * [命令行](Cmd.md)
 * [组件](Comp.md)
 * [扩展](Ext.md)
 * [附录](Appendix.md)
