@@ -11,7 +11,6 @@ ArPHP提供客户端数据包装功能，解析服务端返回的数据，相对
 运行  ArPHP提供的
 
 
-
 服务端入口文件arws.php 定义 
 
 ```define('AR_DEBUG', true);```// 开启调试模式 默认开启 开启将显示DEBUG信息
