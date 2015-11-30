@@ -10,7 +10,7 @@
 * [开发流程](Develop.md)
 * [模式选择](Mode.md)
    * [WEB](web.md)
-   * 扩展函数库
+   * [扩展函数库](Extend.md)
    * [外部框架](FrameMode.md)
    * WebService
    * 命令行
