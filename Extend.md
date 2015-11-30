@@ -10,12 +10,14 @@
 即可作为扩展在其他的框架中使用，以后在也不用怕在陌生的Cms,框架中修改别人的代码了。
 
 
-
-
 和WEB模式的区别就是项目目录不在是main相面， 少了项目配置
 
 AR_MAN_NAME  项目名称  默认为 Arman
 AR_MAN_PATH  项目目录  默认为入口文件path + AR_MAN_NAME，这个路径在如ECHSHOP等多入口项目文件下最好手动设置下， 不然会生成N多个项目目录。
+
+
+## Useage
+在其他PHP项目中引入ArPHP函数库
 
 ```define('AR_OUTER_START', true);```// 设置为扩展模式
 
@@ -25,8 +27,13 @@ AR_MAN_PATH  项目目录  默认为入口文件path + AR_MAN_NAME，这个路�
 
 
 
+## 配置
 
 
+配置文件  public.config.php 设置方式同web模式
 
 
 注:扩展中很多ArPHP本身的功能就没有了，比如控制器等。
+
+
+
