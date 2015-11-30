@@ -9,7 +9,7 @@
    * [性能测试](Test.md)
 * [开发流程](Develop.md)
 * [模式选择](Mode.md)
-   * WEB
+   * [WEB](web.md)
    * 扩展函数库
    * [外部框架](FrameMode.md)
    * WebService
