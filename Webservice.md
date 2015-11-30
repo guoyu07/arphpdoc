@@ -1,2 +1,44 @@
 # WebService
 
+webservice 可以实现主从数据，主从业务机分离模型。有效减小代码耦合程度。
+
+ArPHP在webservice 对这块做了独到的解释。
+
+ArPHP提供客户端数据包装功能，解析服务端返回的数据，相对于传统webservice 调试困难的问题，ArPHP服务端代码调试也是相当
+
+容易，输出的信息可以直接显示在debug控制面板。
+
+运行  ArPHP提供的
+
+
+
+服务端入口文件定义 defined('AR_RUN_AS_SERVICE_HTTP') or define('AR_RUN_AS_SERVICE_HTTP', true);
+
+
+
+服务端默认服务脚本 arws.php 
+
+
+
+创建服务端服务Test
+
+项目目录创建文件夹Service(service存放目录)
+
+具体Service代码
+
+```TestService.class.php
+
+
+class TestService extends ArService
+
+{
+    // 测试WORKER
+    public function t1Worker($a, $b)
+
+    {
+
+        $this->response(123);
+
+    }
+
+}`````````
