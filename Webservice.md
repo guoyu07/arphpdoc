@@ -22,21 +22,21 @@ ArPHP提供的服务端入口文件arws.php 定义
 
 具体Service代码
 
-```TestService.class.php
+Service/TestService.class.php
 
-class TestService extends ArService
-
+```
+class TestService extends ArHttpService
 {
-    // 测试WORKER
-    public function t1Worker($a, $b)
-
+    // 服务名
+    public function t1Worker($e, $b)
     {
-
-        $this->response(123);
+        // 回复客户端
+        $this->response(array($e, $b));
 
     }
 
 }```
+
 
 
 ## 客服端调用
@@ -62,4 +62,5 @@ class TestService extends ArService
 
 
 
-```arComp('rpc.service')->WsTest('t1', array('p1', 'p2'));```  // 123
+```arComp('rpc.service')->WsTest('t1', array('p1', 'p2'));```  
+// array(2) { [0]=> string(2) "p1" [1]=> string(2) "p2" }
