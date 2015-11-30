@@ -42,4 +42,4 @@ class TestService extends ArService
 ## 客服端调用
 
 
-```arComp('rpc.service')->WsTest('t1', array('p1', 'p2'))  // 123```
+```arComp('rpc.service')->WsTest('t1', array('p1', 'p2'));```  // 123
