@@ -5,4 +5,7 @@
 
 入口文件
 
-```defined('AR_AS_WEB') or define('AR_AS_WEB', true);```
+
+```defined('AR_AS_WEB') or define('AR_AS_WEB', true);```// 定义为web模式 （默认为此模式）
+
+```include '../arphp.php';```// 引入arphp框架（注意这里是单文件）
