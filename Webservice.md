@@ -42,4 +42,24 @@ class TestService extends ArService
 ## 客服端调用
 
 
+### 配置服务端地址
+
+组件配置
+
+ 
+  
+       
+       'rpc' => array(
+            'lazy' => true,
+            'service' => array(
+                'config' => array(
+                    // 服务地址
+                    'wsFile' => 'http://localhost/arphp/arws.php',
+                ),
+            ),
+        
+        )
+
+
+
 ```arComp('rpc.service')->WsTest('t1', array('p1', 'p2'));```  // 123
