@@ -13,7 +13,10 @@ ArPHP提供的服务端入口文件arws.php 定义
 ```require_once  'ArPHP/init.php';```// 引入ArPHP初始化文件
 
 
-创建服务端服务Test
+
+## 创建服务端服务Test
+
+
 
 项目目录创建文件夹Service(service存放目录)
 
@@ -34,3 +37,9 @@ class TestService extends ArService
     }
 
 }```
+
+
+## 客服端调用
+
+
+```arComp('rpc.service')->WsTest('t1', array('p1', 'p2'))  // 123```
