@@ -28,6 +28,7 @@
 * [系统函数](Func.md)
 * [附录](Appendix.md)
    * [系统常量](Constant.md)
+   * 系统配置变量
 * [常见问题](Helps.md)
 * [模型](Model.md)
 * [中间件](Module.md)
