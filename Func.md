@@ -82,6 +82,16 @@ arU('url/test', array('a' => 1, 'b' => 2), 'FULL');
 arGet() 是更安全的$_GET全局数组超集，里面的所有元素都经过转义，可以反正sql注入
 
 同理arPost(), arRequest();
+```
+$_GET['a']; // 123
+arGet('a'); // 123
+
+```
+
+
+
+
+
 
 
 
