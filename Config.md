@@ -4,7 +4,7 @@
 ## PATH路径
 
 ```
-arCfg('PATH.APP_SERVER_PATH');  // 项目服地址
+arCfg('PATH.APP_SERVER_PATH');  // 项目地址
 arCfg('PATH.PUBLIC');           // 项目Public目录地址
 arCfg('PATH.GPUBLIC');          // 全局公共Public目录地址
 arCfg('PATH.APP_SERVER_PATH');  // 项目服地址
