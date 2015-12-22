@@ -11,3 +11,8 @@ arComp('tools.util')->getClientIp();
 // $cli 为true 命令行模式下使用 false 直接web容器下获取服务端ip
 arComp('tools.util')->getServerIp($os = 'linux', $cli = true)
 ```
+```
+// 截取字符串 包括中文一样的OK
+arComp('tools.util')->substr_cut($str, $len, $charset="utf-8")
+
+```
