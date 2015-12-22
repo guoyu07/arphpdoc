@@ -5,7 +5,6 @@
 
 
 
-
 ### 使用实例 ：
 
 ```
@@ -31,7 +30,7 @@ class IndexController extends ArController
     public function testAction()
 
     {
-        // 渲染模版
+        // 渲染模版 View/Index/test.php 模版
         $this->display();
 
     }
@@ -39,17 +38,6 @@ class IndexController extends ArController
 }
 
 ```
+访问  localhost/arphp/Index/test 即可 访问到 testAction 方法
 
-Action
-使用实例：
-
-    public function indexAction()
-
-    {
-
-        $this->display();
-
-
-
-    }
 
