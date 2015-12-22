@@ -19,11 +19,11 @@
 
 ### 二种方式
 
-使用之前arComp('hash.mcrypt')->setKey('hehe123');
+使用之前```arComp('hash.mcrypt')->setKey('hehe123');```
 
 ## 加密
-$cipherString = arComp('hash.mcrypt')->encrypt('你好我是密码');
+```$cipherString = arComp('hash.mcrypt')->encrypt('你好我是密码');```
 
 ## 解密
 
-$originString = arComp('hash.mcrypt')->decrypt($cipherString);
+```$originString = arComp('hash.mcrypt')->decrypt($cipherString);```
