@@ -11,19 +11,19 @@ arCfg('PATH.APP_SERVER_PATH');  // 项目服地址
 ```
 ## DIR 绝对路径
 
+```
+arCfg('DIR.CACHE');  // 项目Cache目录地址
 
-arCfg('PATH.APP_SERVER_PATH');  // 项目服地址
+arCfg('DIR.LOG');    // 日志目录地址
+arCfg('DIR.UPLOAD'); // 上传目录
 
-arCfg('PATH.APP_SERVER_PATH');  // 项目服地址
-arCfg('PATH.APP_SERVER_PATH');  // 项目服地址
+arCfg('DIR.VIEW');   // 视图模版地址
 
+arCfg('DIR.EXT');    // 用户自定义扩展类目录
+arCfg('DIR.SEG');    // 片段目录地址
 
-
-arCfg('PATH.APP_SERVER_PATH');  // 项目服地址
-
-
-
-
+```
+## 其他配置
  // path
     'PATH' => array(
         // Web服务器地址
