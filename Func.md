@@ -27,6 +27,7 @@ arCfg($name = '', $default = 'NOT_RGI')
 
 ### 设置配置值
 
+配置的值是全局的 设置一次后面执行到的地方都可以获得
 ```
 
 Ar::setConfig('a', 123);
