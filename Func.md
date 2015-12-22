@@ -69,3 +69,12 @@ arU('url/test', array('a' => 1, 'b' => 2), 'FULL');
 
 
 ```
+
+### 获取Module实例
+
+
+arModule($ModuleName) 前面
+
+
+
+
