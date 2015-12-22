@@ -129,7 +129,7 @@ arEcho($a, 123); // 666
 这功能太强大了，可以模块化的开发任何一块完整的html功能，用在模版里
 
 
-新建文件Conf/Seg/Html/select.php
+新建文件 根目录/Conf/Seg/Html/select.php
 ```
 <select name="<?php echo $name; ?>" <?php echo $oPram; ?>>
     <?php
