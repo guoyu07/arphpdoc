@@ -1,6 +1,6 @@
 # 系统常量
 
-有注释我就直接上代码了， 不可能看不懂
+
 
 ```
 // 启动时间
@@ -62,17 +62,22 @@ AR_COMP_PATH
 AR_SERVER_PATH
 
 // 默认配置文件
-defined('AR_PUBLIC_CONFIG_FILE') or define('AR_PUBLIC_CONFIG_FILE', '');
+AR_PUBLIC_CONFIG_FILE
+
 ```
 
 
-## 扩展方式
-
-    defined('AR_MAN_NAME') or define('AR_MAN_NAME', 'Arman');
-    defined('AR_MAN_PATH') or define('AR_MAN_PATH', AR_ROOT_PATH . AR_MAN_NAME . DS);
-
+## 扩展模式
+```
+// 扩展库项目名 默认Arman
+AR_MAN_NAME
+// 扩展库项目路径
+AR_MAN_PATH
+```
 ## 命令行模式
+```
+// 命令行开发项目目录
+AR_CMD_PATH 
 
-
-    defined('AR_CMD_PATH') or define('AR_CMD_PATH', AR_ROOT_PATH . AR_DEFAULT_APP_NAME . DS);
-
+ ```
+覆盖请在加载arphp之前定义值
