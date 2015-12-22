@@ -24,9 +24,34 @@ arComp('cache.file')->flushAll();   // 清除所有项目缓存 后台常用
 
 ### 配置
 
-
+``` 
+'cache' => array(
+    'redis' => array(
+        // 懒惰加载
+        'lazy' => true,
+                'config' => array(
+                    // redis主机
+                    'host' => '127.0.0.1',
+                    // 端口
+                    'port' => '6379',
+                    // 链接密码
+                    'password' => 'pwd',
+                    // 是否持久连接
+                    // 'pconnect' => true,
+                    // 默认数据库
+                    // 'db' =>
+                ),
+            ),
+        ),
+    ),  
+        ```
 
 
 获取redis操作句柄
 
-$redis = arComp('cache.redis');
+```$redis = arComp('cache.redis');```
+
+
+
+
+
