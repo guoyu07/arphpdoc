@@ -4,8 +4,11 @@
 
 ```
 // 启动时间
-defined('AR_START_TIME') or define('AR_START_TIME', microtime(true));
+AR_START_TIME
+
 // 开启调试 是
+
+defineAR_DEBUG
 defined('AR_DEBUG') or define('AR_DEBUG', true);
 // 外部启动 否 默认管理目录ArMan
 defined('AR_OUTER_START') or define('AR_OUTER_START', false);
@@ -44,3 +47,15 @@ defined('AR_SERVER_PATH') or define('AR_SERVER_PATH', ($dir = dirname($_SERVER['
 // 默认配置文件
 defined('AR_PUBLIC_CONFIG_FILE') or define('AR_PUBLIC_CONFIG_FILE', '');
 ```
+
+
+## 扩展方式
+
+    defined('AR_MAN_NAME') or define('AR_MAN_NAME', 'Arman');
+    defined('AR_MAN_PATH') or define('AR_MAN_PATH', AR_ROOT_PATH . AR_MAN_NAME . DS);
+
+## 命令行模式
+
+
+    defined('AR_CMD_PATH') or define('AR_CMD_PATH', AR_ROOT_PATH . AR_DEFAULT_APP_NAME . DS);
+
