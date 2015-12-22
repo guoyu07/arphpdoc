@@ -14,7 +14,6 @@ class MyModule
     public function test()
 
     {
-
         echo 'test';
 
     }
