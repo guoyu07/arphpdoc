@@ -118,7 +118,6 @@ arEcho($echo = '', $default = '', $key = '')
 $echo 为空则输出$default 值
 
 arEcho($a, 123); // 123
-
 arEcho(1, array('a','b','c')); // b
 arEcho(1, array(array('a','b','c'),array('d','e','f')), 1); // e
 $a = 666;
