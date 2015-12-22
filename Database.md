@@ -157,18 +157,28 @@ $db->table('t1')->where($dbCondition)->queryAll();
 
 
 
-### limit查询
-
-
-
+### 查询limit
 
 查询5条
 
+```
 $db->table('t1')->where($dbCondition)->limit(5)->queryAll();
+```
 
 
 
+### 排序order
 
+```
+$db->table('t1')->where($dbCondition)->limit(5)->order('id desc')->queryAll();
+```
+
+### 分组group
+
+
+```
+$db->table('t1')->where($dbCondition)->group('name')->queryAll();
+```
 
 
 
