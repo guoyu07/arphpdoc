@@ -28,6 +28,6 @@
 * [系统函数](Func.md)
 * [附录](Appendix.md)
 * [常见问题](Helps.md)
-* 模型
+* [模型](Model.md)
 * 中间件
 
