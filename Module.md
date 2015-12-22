@@ -11,7 +11,6 @@ Module就是中间件对你没有看错，它在控制器和Model之间穿梭，
 class MyModule
 
 {
-
     public function test()
 
     {
