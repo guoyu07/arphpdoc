@@ -88,9 +88,19 @@ arGet('a'); // 123
 
 ```
 
+加载其他模块
+```
+// $path 可以为路径 也可以 . 号分隔的path
+arLm($path)
 
+arModule('Test')->test(); // 调用当前项目Module/Test
 
+// 引入admin/Moduel  把admin/Module纳入include_path，类似加入环境变量
+arLm('admin.Module');     
 
+// 如果admin下存在TestModule 则调用admin项目Module/Test,不存在依然调用当前项目Moduel, 场景就是可以定义一个公共的Moduel源
+arModule('Test')->test(); 
+```
 
 
 
