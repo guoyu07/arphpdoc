@@ -181,6 +181,12 @@ $db->table('t1')->where($dbCondition)->group('name')->queryAll();
 ```
 
 
+### 联表查询
+```
+$db->table('t1')->where($dbCondition)->leftJoin('t2', 't1.id = t2.tid')->queryAll();
+
+```
+
 
 
 
