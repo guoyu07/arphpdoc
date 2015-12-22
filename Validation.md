@@ -1,5 +1,7 @@
 # 验证
 
+
+
 使用方法
 
 arComp('validator.validator')->
@@ -13,3 +15,5 @@ arComp('validator.validator')->
  checkEmpty($obj) // 是否empty
  
 ```
+
+说明:此组件待扩展完善
