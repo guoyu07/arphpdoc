@@ -7,8 +7,9 @@ index.php
 
 代码
 
-include_once ArPHP/init.php
+```
+include_once 'ArPHP/init.php';
 
+```
 
-
-访问index.php即可件 hello ArPHP!
+访问index.php即可
