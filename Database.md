@@ -188,6 +188,15 @@ $db->table('t1')->where($dbCondition)->leftJoin('t2', 't1.id = t2.tid')->queryAl
 ```
 
 
+## 删除
+
+```
+$db->table('t1')->where($dbCondition)->delete();
+
+```
+
+
+## 更新
 
 
 
