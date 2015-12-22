@@ -29,8 +29,6 @@ class MyTableModel extends ArModel {
 ```
 
 
-
-
 ## 获取数据库Model实例
 
 
