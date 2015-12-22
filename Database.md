@@ -240,3 +240,8 @@ $db->table('t1')->batchInsert(二维数组);
 
 ```
 
+
+### 其他说明
+
+
+Oracle sqlserver 同mysql  ， 目前实现了这三类 推荐mysql 它和PHP的结合的更好
