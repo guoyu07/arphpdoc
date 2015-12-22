@@ -29,9 +29,9 @@
 * [附录](Appendix.md)
    * [系统常量](Constant.md)
    * [系统配置变量](Config.md)
-* [常见问题](Helps.md)
 * [模型](Model.md)
 * [中间件](Module.md)
 * [控制器](Controller.md)
+* [常见问题](Helps.md)
 * [模版视图](View.md)
 
