@@ -40,3 +40,20 @@ class IndexController extends ArController
 访问  localhost/arphp/Index/test 即可 访问到 testAction 方法
 
 
+
+### 分配数据
+```
+代码片段
+
+public function test2Action() 
+{
+    // 这里assign 方法一定要传数组 这是规定
+    $this->assign(array('a' => 123));
+    $this->display();
+    
+}
+
+
+View/Index/test2.php 里
+<?php echo $a; // 123   ?>
+```
