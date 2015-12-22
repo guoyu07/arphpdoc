@@ -17,6 +17,7 @@
 * [组件](Comp.md)
    * [扩展](Ext.md)
    * [数据库](Database.md)
+   * 缓存
 * [附录](Appendix.md)
 * [常见问题](Helps.md)
 
