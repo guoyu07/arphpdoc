@@ -51,7 +51,13 @@ arComp('cache.file')->flushAll();   // 清除所有项目缓存 后台常用
 
 ```$redis = arComp('cache.redis');```
 
+redis锁
 
+```
+$redis->lock('key', 1, 6);  // 获取锁 失败时等待1秒重试，最大6秒后超时返回false
+$redis->lock('key', 0);     // 默认获取不到锁直接返回false
+成功返回true
+```
 
-
+其他操作 类似于 file
 
