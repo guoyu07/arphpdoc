@@ -16,3 +16,9 @@ arComp('tools.util')->getServerIp($os = 'linux', $cli = true)
 arComp('tools.util')->substr_cut($str, $len, $charset="utf-8")
 
 ```
+
+```
+// 截取字符串 包括中文一样的OK $format  有CHAR,NUMBER,ALL 三种
+arComp('tools.util')->randpw($len = 8, $format = 'ALL')
+
+```
