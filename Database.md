@@ -181,14 +181,21 @@ $db->table('t1')->where($dbCondition)->group('name')->queryAll();
 ```
 
 
-### 联表查询
+### 联表查询 join
+左联接
 ```
 $db->table('t1')->where($dbCondition)->leftJoin('t2', 't1.id = t2.tid')->queryAll();
 
 ```
 
 
-## 删除
+右联接
+```
+$db->table('t1')->where($dbCondition)->rightJoin('t2', 't1.id = t2.tid')->queryAll();
+
+```
+
+## 删除delete
 
 ```
 $db->table('t1')->where($dbCondition)->delete();
@@ -196,11 +203,22 @@ $db->table('t1')->where($dbCondition)->delete();
 ```
 
 
-## 更新
+## 更新update
 
 ```
 $db->table('t1')->where($dbCondition)->update(array('name' => 'abc'));
 
 ```
+
+## 插入
+
+单条插入
+
+```
+$db->table('t1')->where($dbCondition)->insert(array('id' => 2, 'name' => 'abc'));
+
+```
+
+批量插入
 
 
