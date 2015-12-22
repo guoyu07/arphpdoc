@@ -1,3 +1,3 @@
 # Introduction
 
-ArPhp a Highly Performence PHP Framework! Try It! You Will Not Reget!
+ArPHP A Highly Performenced PHP Framework! Try It! You Will Not Reget!
