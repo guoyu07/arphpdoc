@@ -19,7 +19,7 @@
    * [数据库](Database.md)
    * [缓存](Cache.md)
    * [格式化](Format.md)
-   * 加解密
+   * [加解密](Crypt.md)
 * [附录](Appendix.md)
 * [常见问题](Helps.md)
 
