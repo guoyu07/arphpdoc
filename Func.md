@@ -88,7 +88,10 @@ arGet('a'); // 123
 
 ```
 
-加载其他模块
+
+### 加载其他模块
+
+
 ```
 // $path 可以为路径 也可以 . 号分隔的path
 arLm($path)
@@ -102,11 +105,23 @@ arLm('admin.Module');
 arModule('Test')->test(); 
 ```
 
-模版输出
+
+### 模版输出
+
+
 
 echo 的升级版本，只是加入了默认参数
-
+```
 arEcho($echo = '', $default = '', $key = '')
 
 
+$echo 为空则输出$default 值
+
+arEcho($a, 123); // 123
+
+arEcho(1, array('a','b','c')); // b
+arEcho(1, array(array('a','b','c'),array('d','e','f')), 1); // e
+$a = 666;
+arEcho($a, 123); // 666
+```
 
