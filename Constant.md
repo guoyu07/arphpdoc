@@ -6,44 +6,61 @@
 // 启动时间
 AR_START_TIME
 
-// 开启调试 是
+// 开启调试 默认是true
+AR_DEBUG    
 
-defineAR_DEBUG
-defined('AR_DEBUG') or define('AR_DEBUG', true);
-// 外部启动 否 默认管理目录ArMan
-defined('AR_OUTER_START') or define('AR_OUTER_START', false);
-// 自启动session
-defined('AR_AUTO_START_SESSION') or define('AR_AUTO_START_SESSION', true);
-// 作为外部框架加载 可嵌入其他框架
-defined('AR_AS_OUTER_FRAME') or define('AR_AS_OUTER_FRAME', false);
-// 内部实现http webservice 多套 arphp程序互调接口
-defined('AR_RUN_AS_SERVICE_HTTP') or define('AR_RUN_AS_SERVICE_HTTP', false);
-// 实现 cmd socket 编程
-defined('AR_AS_CMD') or define('AR_AS_CMD', false);
+// 外部启动 否false 默认管理目录ArMan
+AR_OUTER_START
+
+// 自启动session 默认是 true
+AR_AUTO_START_SESSION
+
+// 作为外部框架加载 可嵌入其他框架 false
+AR_AS_OUTER_FRAME
+
+// 内部实现http webservice 多套 arphp程序互调接口 false
+
+AR_RUN_AS_SERVICE_HTTP
+
+// 实现 cmd socket 编程 false
+AR_AS_CMD
+
 // web application 默认方式
-defined('AR_AS_WEB') or define('AR_AS_WEB', true);
-// app名 main
-defined('AR_DEFAULT_APP_NAME') or define('AR_DEFAULT_APP_NAME', 'main');
-// 默认的控制器名
-defined('AR_DEFAULT_CONTROLLER') or define('AR_DEFAULT_CONTROLLER', 'Index');
-// 默认的Action
-defined('AR_DEFAULT_ACTION') or define('AR_DEFAULT_ACTION', 'index');
-// 目录分割符号
-defined('DS') or define('DS', DIRECTORY_SEPARATOR);
+AR_AS_WEB
+
+// app名 默认main
+AR_DEFAULT_APP_NAME
+
+// 默认的控制器名  默认Index
+AR_DEFAULT_CONTROLLER
+
+// 默认的Action 默认 index
+AR_DEFAULT_ACTION
+
+// 目录分割符号  DIRECTORY_SEPARATOR
+DS
+
 // ar框架目录
-defined('AR_FRAME_PATH') or define('AR_FRAME_PATH', dirname(__FILE__) . DS);
+AR_FRAME_PATH  AR框架目录
+
 // 项目根目录
-defined('AR_ROOT_PATH') or define('AR_ROOT_PATH', realpath(dirname($_SERVER['SCRIPT_FILENAME'])) . DS);
-// 核心目录
-defined('AR_CORE_PATH') or define('AR_CORE_PATH', AR_FRAME_PATH . 'Core' . DS);
-// 配置目录
-defined('AR_CONFIG_PATH') or define('AR_CONFIG_PATH', AR_FRAME_PATH . 'Conf' . DS);
-// 扩展目录
-defined('AR_EXT_PATH') or define('AR_EXT_PATH', AR_FRAME_PATH . 'Extensions' . DS);
-// 模块目录
-defined('AR_COMP_PATH') or define('AR_COMP_PATH', AR_FRAME_PATH . 'Components' . DS);
-// 服务地址
-defined('AR_SERVER_PATH') or define('AR_SERVER_PATH', ($dir = dirname($_SERVER['SCRIPT_NAME'])) == DS ? '/' : str_replace(DS, '/', $dir) . '/');
+AR_ROOT_PATH
+
+// AR核心类库目录
+AR_CORE_PATH
+
+// Ar系统初始配置目录
+AR_CONFIG_PATH
+
+// 系统扩展目录
+AR_EXT_PATH
+
+// 系统模块目录
+AR_COMP_PATH
+
+// Web目录地址
+AR_SERVER_PATH
+
 // 默认配置文件
 defined('AR_PUBLIC_CONFIG_FILE') or define('AR_PUBLIC_CONFIG_FILE', '');
 ```
