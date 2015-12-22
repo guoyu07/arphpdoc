@@ -24,6 +24,6 @@ class MyModule
 
 ```
 
-Controller调用：
+调用方式：
 
 arModule('My')->test();
