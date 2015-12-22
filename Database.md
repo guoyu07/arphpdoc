@@ -222,10 +222,14 @@ $db->table('t1')->where($dbCondition)->update(array('name' => 'abc'));
 单条插入
 
 ```
-$db->table('t1')->where($dbCondition)->insert(array('id' => 2, 'name' => 'abc'));
+$db->table('t1')->insert(array('id' => 2, 'name' => 'abc'));
 
 ```
 
 批量插入
 
+```
+$db->table('t1')->batchInsert(二维数组);
+
+```
 
