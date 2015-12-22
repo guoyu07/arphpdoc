@@ -85,11 +85,41 @@
 
 ## 获取数据库实例
 
+### 原生写法
+
+
 ```$db = arComp('db.mysql')->read('default'); ```// 获取read.default配置即arphp数据库
 
 ```$db = arComp('db.mysql')->read('readdb');``` // 获取read.readdb配置即arphp2数据库
 
 ```$db = arComp('db.mysql')->write('writedb');``` // 获取read.writedb配置即arphp3数据库
+
+
+
+### Model模型（一个模型一个表推荐写法）
+
+1. 在Model文件夹下建立TestModel.class.php 文件
+2. 保存如下内容
+
+class TestModel extends ArModel
+{
+    // 表名
+    public $tableName = 'test';
+
+    // 初始化model 固定写法
+    static public function model($class = __CLASS__)
+    {
+        return parent::model($class);
+
+    }
+
+
+}
+
+3. 获取实例
+```$db = TestModel::model()->getDb();``` // 获取默认read.default配置数据库下的test表数据库实例
+
+
 
 
 
