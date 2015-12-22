@@ -129,6 +129,51 @@ arEcho($a, 123); // 666
 这功能太强大了，可以模块化的开发任何一块完整的html功能，用在模版里
 
 
-arSeg($segment)
+新建文件Conf/Seg/Html/select.php
+```
+<select name="<?php echo $name; ?>" <?php echo $oPram; ?>>
+    <?php
+        foreach ($map as $k => $v) :
+    ?>
 
+    <option
+    <?php
+        if (isset($selected) && $selected == $k) :
+    ?>
+    selected = "selected"
+    <?php
+        endif;
+    ?>value="<?php echo $k; ?>"><?php echo $v; ?></option>
+
+    <?php
+        endforeach;
+    ?>
+</select>
+```
+模版里面调用
+
+
+      // 调用用html seg 直接输出 select标签
+      arSeg(
+         array(
+            // seg文件
+            'segKey' => 'Html/select',
+            // <select name="name">
+            'name' => 'sex',
+            // 适配器数据 数组
+            'map' => array('男', '女'),
+            // 选中的value selected = selected
+            'selected' => 0
+         )
+      );
+
+将生成如下HTML代码
+
+```
+<select name="sex">
+    <option value="0" selected="selected">男</option>
+    <option value="1" >女</option>
+</select>
+```
+真的快速开发，特别是复杂的公用数据的时候
 
