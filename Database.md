@@ -24,9 +24,9 @@
                 
                     // 配置写库（一般主库，这里展示读写分离配置）
                     'write' => array(
-                        'local' => array(
+                        'writedb' => array(
                             // 链接字符串
-                            'dsn' =>'mysql:host=localhost;dbname=arphp1;port=3306',
+                            'dsn' =>'mysql:host=localhost;dbname=arphp3;port=3306',
                             // 用户
                             'user' => 'arphp',
                             // 密码
@@ -63,7 +63,7 @@
                     
                     
                         'default' => array(
-                            'dsn' => 'mysql:host=localhost;dbname=arphp3;port=3306',
+                            'dsn' => 'mysql:host=localhost;dbname=arphp;port=3306',
 
                             'user' => 'root',
 
@@ -86,8 +86,8 @@
 ## 获取数据库实例
 
 $db = arComp('db.mysql')->read('default'); //获取read.default配置即arphp数据库
-$db = arComp('db.mysql')->read('readdb'); //获取read.default配置即arphp2数据库
-$db = arComp('db.mysql')->read('readdb'); //获取read.default配置即arphp2数据库
+$db = arComp('db.mysql')->read('readdb'); //获取read.d配置即arphp2数据库
+$db = arComp('db.mysql')->write('writedb'); //获取read.dult配置即arphp3数据库
 
 
 
