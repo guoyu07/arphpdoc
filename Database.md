@@ -85,9 +85,10 @@
 
 ## 获取数据库实例
 
-$db = arComp('db.mysql')->read('default'); //获取read.default配置即arphp数据库
-$db = arComp('db.mysql')->read('readdb'); //获取read.readdb配置即arphp2数据库
-$db = arComp('db.mysql')->write('writedb'); //获取read.writedb配置即arphp3数据库
+```$db = arComp('db.mysql')->read('default'); ```
+// 获取read.default配置即arphp数据库
+```$db = arComp('db.mysql')->read('readdb'); ```//获取read.readdb配置即arphp2数据库
+```$db = arComp('db.mysql')->write('writedb');``` //获取read.writedb配置即arphp3数据库
 
 
 
