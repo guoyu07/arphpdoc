@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "addcssjs"
+        "addcssjs",
+        "28msec"
     ],
     "pluginsConfig": {}
 }
