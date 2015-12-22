@@ -88,7 +88,7 @@
 ### 原生写法
 
 
-```$db = arComp('db.mysql')->read('default'); ```// 获取read.default配置即arphp数据库
+```$db = arComp('db.mysql')->read('default'); ```// 获取read.default配置即arphp数据库 默认请配置一个read.default配置
 
 ```$db = arComp('db.mysql')->read('readdb');``` // 获取read.readdb配置即arphp2数据库
 
