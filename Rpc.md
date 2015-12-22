@@ -29,3 +29,17 @@ $url 请求的url
 
 
 $show 为true直接显示(如图片)， false会下载当前资源
+
+
+
+## Json
+
+```
+arComp('rpc.json')->callApi('api/testJson', $params);
+
+```
+
+直接请求本地项目json数据解析
+
+
+
