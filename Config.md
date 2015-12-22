@@ -24,31 +24,14 @@ arCfg('DIR.SEG');    // 片段目录地址
 
 ```
 ## 其他配置
- // path
-    'PATH' => array(
-        // Web服务器地址
-        'APP_SERVER_PATH' => AR_SERVER_PATH . arCfg('requestRoute.a_m') . '/',
-        'PUBLIC' => AR_SERVER_PATH . arCfg('requestRoute.a_m') . '/Public/',
-        'GPUBLIC' => AR_SERVER_PATH . 'Public/',
-        // 兼容以前
-        'CACHE' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Cache' . DS,
-        'LOG' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Log' . DS,
-        'VIEW' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'View' . DS,
-        'UPLOAD' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Upload' . DS,
-        'EXT' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Ext' . DS,
-    ),
-
-    // dir
-    'DIR' => array(
-        'CACHE' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Cache' . DS,
-        'LOG' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Log' . DS,
-        'VIEW' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'View' . DS,
-        'UPLOAD' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Upload' . DS,
-        'EXT' => AR_ROOT_PATH . arCfg('requestRoute.a_m') . DS . 'Ext' . DS,
-        // 片段目录
-        'SEG' => AR_PUBLIC_CONFIG_PATH . 'Seg' . DS,
-    ),
-
+arCfg('URL_MODE');   // URL路由模式 默认PATH
+arCfg('URL_GREEDY');    // URL贪婪模式 arU 函数会使用 影响生成的链接参数
+arCfg('DEBUG_SHOW_TRACE');    // 开启trace跟踪信息
+arCfg('DEBUG_SHOW_ERROR');    // 片段目录地址
+arCfg('DEBUG_SHOW_EXCEPTION');    // 片段目录地址
+arCfg('DEBUG_SHOW_EXCEPTION');    // 异常信息
+arCfg('DIR.SEG');    // 片段目录地址
+arCfg('DIR.SEG');    // 片段目录地址
     // url
     'URL_MODE' => 'PATH',
     // 全局url 贪婪模式
