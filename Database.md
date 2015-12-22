@@ -121,6 +121,58 @@ class TestModel extends ArModel
 
 
 
+# 数据库操作
+
+
+## 查询
+
+
+### 查询一行
+
+```
+$result = $db->table('t1')->queryRow();
+
+```
+$result 为一维数组
+
+### 查询所有
+
+
+
+```
+$db->table('t1')->queryAll();
+
+```
+
+
+### 条件查询
+
+$db->table('t1')->where($dbCondition)->queryAll();
+
+### $dbCondition 
+
+
+可以为字符串 ``` "a=1 and b = 2"```
+也可以为数组``` array('a' => 1, 'b > ' => 1, 'c != ' => 1); ```
+
+
+
+### limit查询
+
+
+
+
+查询5条
+
+$db->table('t1')->where($dbCondition)->limit(5)->queryAll();
+
+
+
+
+
+
+
+
 
 
 
