@@ -117,7 +117,13 @@ class TestModel extends ArModel
 }
 
 3. 获取实例
-```$db = TestModel::model()->getDb();``` // 获取默认read.default配置数据库下的test表数据库实例
+```
+$db = TestModel::model()->getDb();
+
+``` 
+// 使用时可以不写方法table，在Model已经定义过了
+
+获取默认read.default配置数据库下的test表数据库实例
 
 
 
