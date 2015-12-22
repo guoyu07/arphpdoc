@@ -9,7 +9,7 @@
 ### 使用实例 ：
 
 ```
-
+// Index控制器
 class IndexController extends ArController 
 {
     // 第一个执行方法
@@ -28,7 +28,7 @@ class IndexController extends ArController
      * @return void
 
      */
-    public function indexAction()
+    public function testAction()
 
     {
         // 渲染模版
