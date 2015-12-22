@@ -17,3 +17,14 @@ $extension  允许的扩展名
 String 的文件名称
 
 
+
+## 自定义扩展
+
+继承ArComponnent类
+
+
+实现init方法
+
+调用
+
+```arComp('ext.yourextensionname')->func();```
