@@ -10,7 +10,7 @@
 arComp('url.route')->serverName();  // http://localhost
 arComp('url.route')->host();        // http://localhost/arphp
 arComp('url.route')->host(true);    // http://localhost/arphp/index.php
-arComp('url.route')->serverPath();  // http://localhost/arphp/index.php
+
 // 绝对地址转换为web相对路径
 arComp('url.route')->serverPath('E:\web\arphp\main\\');  // /arphp/main
 // web路径转为绝对地址
