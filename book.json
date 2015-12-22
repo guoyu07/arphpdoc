@@ -2,7 +2,8 @@
     "plugins": [
         "addcssjs",
         "28msec",
-        "comment"
+        "comment",
+        "highlightjs"
     ],
     "pluginsConfig": {}
 }
