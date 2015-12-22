@@ -7,6 +7,8 @@
 以arphp默认初始地址url http://localhost/arphp/index.php 为例
 
 arComp('url.route')->serverName();  // http://localhost
-arComp('url.route')->host();
-arComp('url.route')->serverPath();
+arComp('url.route')->host();        // http://localhost/arphp
+arComp('url.route')->host(true);    // http://localhost/arphp
+arComp('url.route')->serverPath();  
+arComp('url.route')->serverPath();  
 arComp('url.route')->pathToDir();
