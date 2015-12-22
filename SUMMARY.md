@@ -22,7 +22,7 @@
    * [加解密](Crypt.md)
    * [列表](List.md)
    * [远程调用](Rpc.md)
-   * 验证
+   * [验证](Validation.md)
 * [附录](Appendix.md)
 * [常见问题](Helps.md)
 
