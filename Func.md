@@ -72,9 +72,16 @@ arU('url/test', array('a' => 1, 'b' => 2), 'FULL');
 
 ### 获取Module实例
 
-```$module = arModule($ModuleName);```
+```$module = arModule($ModuleName);``
+`
 
 
+
+### 用户参数
+
+arGet() 是更安全的$_GET全局数组超集，里面的所有元素都经过转义，可以反正sql注入
+
+同理arPost(), arRequest();
 
 
 
