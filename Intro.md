@@ -7,9 +7,9 @@ ArPHP框架，单文件框架，惰性加载机制，性能优越，压力测试
 加载方式：
 
 
-如果是常规框架  require_once 'ArPHP/init.php';
+如果是常规框架  ```require_once 'ArPHP/init.php';```
 
-如果是单框架，你可以通过一个文件来使用AP，require_once 'arphp.php';就一个文件，不用再为加载一大堆框架文件而发愁.
+如果是单框架，你可以通过一个文件来使用AP，```require_once 'arphp.php';```就一个文件，不用再为加载一大堆框架文件而发愁.
 
 
 开发者:assnr
