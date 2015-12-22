@@ -3,7 +3,10 @@
 
 ## 上传文件
 
+```
 arComp('ext.upload')->upload('filefield', $path, $extension);
+
+```
 
 $path 为上传目录 默认为项目目录/Upload
 
