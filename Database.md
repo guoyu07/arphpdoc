@@ -198,6 +198,9 @@ $db->table('t1')->where($dbCondition)->delete();
 
 ## 更新
 
+```
+$db->table('t1')->where($dbCondition)->update(array('name' => 'abc'));
 
+```
 
 
