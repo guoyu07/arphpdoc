@@ -102,7 +102,11 @@ arLm('admin.Module');
 arModule('Test')->test(); 
 ```
 
+模版输出
 
+echo 的升级版本，只是加入了默认参数
+
+arEcho($echo = '', $default = '', $key = '')
 
 
 
