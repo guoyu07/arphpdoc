@@ -21,6 +21,7 @@ arComp('cache.file')->flushAll();   // 清除所有项目缓存 后台常用
 
 ## redis缓存
 
+redis组件类已实现自动断开重连机制
 
 ### 配置
 
