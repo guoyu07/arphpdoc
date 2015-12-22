@@ -1,9 +1,6 @@
 # 系统函数
 
 
-## 系统别名函数
-
-
 ### 获取组件实例
 
 
@@ -41,11 +38,34 @@ arCfg('a')   // 123
 // .多级属性
 
 Ar::setConfig('a.b', 456);
-arCfg('a.b') // 456```
+arCfg('a.b') // 456
+```
 
 
 
 
+### 生成URL
+arU($name = '', $params = array(), $urlMode = 'NOT_INIT')
+
+等于组件里的方法arComp('url.route')->createUrl($name, $params, $urlMode);
+
+参数说明:
+
+$name 生成的url字符串
+$params 参数 数组
+$urlMode PATH(路径默认),QUERY（查询）,FULL(完整查询链接)三种
+
+```
+// /arphp/url/test/a/1/b/2
+arU('url/test', array('a' => 1, 'b' => 2));  
 
 
+// http://localhost/arphp?a_c=url&a_a=test&a=1&b=2
+arU('url/test', array('a' => 1, 'b' => 2), 'QUERY'); 
 
+
+// http://localhost/arphp/index.php?a_c=url&a_a=test&a=1&b=2
+arU('url/test', array('a' => 1, 'b' => 2), 'FULL'); 
+
+
+```
